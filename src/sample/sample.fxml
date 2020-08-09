@@ -1,8 +1,23 @@
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextArea?>
+
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<GridPane fx:controller="sample.Controller"
-          xmlns:fx="http://javafx.com/fxml" alignment="center" hgap="10" vgap="10">
-</GridPane>
+
+<?import com.sun.javafx.scene.control.FakeFocusTextField?>
+<?import javafx.scene.text.TextFlow?>
+
+<?import javafx.scene.control.TextField?>
+<VBox fx:controller="sample.Controller" xmlns:fx="http://javafx.com/fxml" alignment="center">
+    <TextArea fx:id="mainTextArea" VBox.vgrow="ALWAYS" />
+    <Button text="Send text" onAction="#btnOneClickAction"/>
+    <TextField  fx:id="mainTextField" >
+
+
+
+    </TextField>
+
+
+</VBox>
